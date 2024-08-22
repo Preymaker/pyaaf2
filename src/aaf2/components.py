@@ -212,10 +212,10 @@ class SourceClip(SourceReference):
                     yield clip
                     for item in clip.walk():
                         yield item
-                else:
-                    raise NotImplementedError("Sequence returned {} not "
-                                              "implemented".format(
-                                                  type(segment)))
+                # else:
+                #     raise NotImplementedError("Sequence returned {} not "
+                #                               "implemented".format(
+                #                                   type(segment)))
 
         elif isinstance(segment, EssenceGroup):
             yield segment
